@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhanced Html</title>
+</head>
+<body>
+
+  <h1>Welcome To My Ultimate Website </h1>
+
+  <!-- Section 1: Lists  both ordered and unordered-->
+  <section aria-labelledby="lists">
+    <h2 id="lists">Lists Showcase</h2>
+    <p>Here are examples of an unordered list and an ordered list:</p>
+
+    <!--unordered list-->
+    <h3>Unordered List of My Favorite Fruits</h3>
+    <ul>
+      <li>Apples</li>
+      <li>Bananas</li>
+      <li>Pineapple</li>
+      <li>Oranges</li>
+    </ul>
+
+    <!--ordered List-->
+    <h3>Ordered List for Steps to Cook Ugali</h3>
+    <ol>
+      <li>Boil water upto 100 degree celcius</li>
+      <li>Place/add floor slowly</li>
+      <li>Add floor until it becomes little regid</li>
+      <li>Wait for 3-5 minutes for it to be ready</li>
+      <li>Remove and save with Kienyeji</li>
+    </ol>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section aria-labelledby="table">
+    <h2 id="table">Table</h2>
+    <p>This is a simple table listing some countries with their capitals and populations:</p>
+    <table  border="1">
+      <caption>Countries and their Capitals</caption>
+      <thead>
+        <tr>
+          <th scope="col">Country</th>
+          <th scope="col">Capital</th>
+          <th scope="col">Population (millions)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kenya</td>
+          <td>Nairobi</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <td>Japan</td>
+          <td>Tokyo</td>
+          <td>125.8</td>
+        </tr>
+        <tr>
+          <td>Tanzania</td>
+          <td>Darisalam</td>
+          <td>51.2</td>
+        </tr>
+        <tr>
+          <td>Canada</td>
+          <td>Ottawa</td>
+          <td>38.0</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section aria-labelledby="media">
+    <h2 id="media">Media</h2>
+    <p>An image and a video embedded below:</p>
+
+    <figure>
+      <img src="davvis.png" alt="Davis On The Mic" width="400" height="400" />
+      <figcaption>Davis On The Mic</figcaption>
+    </figure>
+
+    <video controls width="600" height="338">
+      <source src="decover.mp4" type="video/mp4" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+  </section>
+
+  <!-- Section 4: The Form -->
+  <section aria-labelledby="form">
+    <h2 id="form">Contact & Feedback Form</h2>
+    <p>Please fill in the form below. All required fields must be completed.</p>
+
+    <form action="#" method="post" novalidate>
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name</label>
+        <input 
+          type="text" 
+          id="fullname" 
+          name="fullname" 
+          required 
+          minlength="100" 
+          placeholder="Daviss Kipruto" 
+          autocomplete="name" 
+        />
+
+        <label for="email">Email Address</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          required 
+          placeholder="davise@mail.com" 
+          autocomplete="email" 
+        />
+
+        <label for="phone">Phone Number</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          name="phone" 
+          placeholder="+254 716-262-538" 
+          autocomplete="tel"
+        />
+      </fieldset>
+<br><br>
+      <!-- Preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="contact-method">Preferred Contact Method</label>
+        <select id="contact-method" name="contact-method" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+          <option value="none">No Contact</option>
+        </select>
+
+        <label>
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+          Subscribe to Newsletter?
+        </label>
+      </fieldset>
+<br><br>
+      <!-- Feedback -->
+      <fieldset>
+        <legend>Feedback</legend>
+
+        <label for="rating">Please don't forget to rate my website (1-5)</label>
+        <input 
+          type="number" 
+          id="rating" 
+          name="rating" 
+          min="1" 
+          max="5" 
+          required
+        />
+      
+
+        <label for="comments">Additional Comments</label>
+        <textarea cols="" 
+          id="comments" 
+          name="comments" 
+          rows="6" 
+          minlength="10" 
+          maxlength="500" 
+          placeholder="Your feedback helps me improve my website."
+        ></textarea>
+      </fieldset>
+<br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</body>
+</html>
